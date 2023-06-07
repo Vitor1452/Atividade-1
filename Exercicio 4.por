@@ -1,24 +1,27 @@
 programa
 {
+	inclua biblioteca Matematica
 	
 	funcao inicio()
 	{
-		inteiro A,B,C,D
 		
+	inteiro distancia
+	real combustivel,medio
 
-		escreva("O valor de A?\n")
-		leia(A)
+	escreva("Qual a distancia percorrida? \n")
+	leia(distancia)
 
-		escreva("O valor de B?\n")
-		leia(B)
+	escreva("Qual a quantidade de combustivel gasto? \n")
+	leia(combustivel)
 
-		escreva("O valor de C?\n")
-		leia(C)
 
-		escreva("O valor de D?\n")
-		leia(D)
+	medio=(distancia /combustivel)
+	
+	escreva("O consumo medio é: \n",Matematica.arredondar(medio,3))
+	leia(medio)
 
-		escreva(A * B - C * D)
+	
+	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 56; 
+ * @POSICAO-CURSOR = 0; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

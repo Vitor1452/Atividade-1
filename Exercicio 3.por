@@ -1,24 +1,29 @@
 programa
 {
+	inclua biblioteca Matematica
 	
 	funcao inicio()
-	{
-		inteiro A,B,C,D
+	{ 
 		
+	cadeia nome
+	real salario,vendas,total
 
-		escreva("O valor de A?\n")
-		leia(A)
+	escreva("Nos informe o seu nome? \n")
+	leia(nome)
 
-		escreva("O valor de B?\n")
-		leia(B)
+	escreva("Nos informe o seu total de vendas: \n")
+	leia(vendas)
 
-		escreva("O valor de C?\n")
-		leia(C)
+	escreva("Nos informe o seu salario: \n")
+	leia(salario)
 
-		escreva("O valor de D?\n")
-		leia(D)
+	total=(vendas*0.15)+salario
+	
+	escreva("Você recebera um total de comissão: \n",Matematica.arredondar(total,2))
+	
+	
 
-		escreva(A * B - C * D)
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 56; 
+ * @POSICAO-CURSOR = 365; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
